@@ -31,3 +31,5 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',{useNewUrlParser: true} 
 
     //client.close();
 });
+
+//mongoose - object relational mapping NPM library
