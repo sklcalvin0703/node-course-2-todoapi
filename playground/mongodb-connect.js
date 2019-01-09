@@ -3,7 +3,6 @@ const {MongoClient} = require('mongodb'); //same as the code above
 var user = {name: 'andrew', age:25};
 var {name} = user; //object destruction
 console.log(name);
-//process.env.MONGODB_URI ||
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client)=>{
     if (err){
         return console.log('Unable to connect to mongodb server');
