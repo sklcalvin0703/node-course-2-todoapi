@@ -71,13 +71,13 @@ app.delete('/todos/:id', (req,res)=>{
         if(!todo){
             return res.status(404).send();
         }
-        res.status(200).send(todo);
+        res.status(200).send({todo});
     }).catch((e)=>{
         res.status(400).send();
     })
 });
 
-
+ 
 app.listen(port, ()=>{
     console.log(`Started on Port ${port}`);
 });
